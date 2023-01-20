@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Movie DB</title>
+</head>
+<body>
+    <header>
+        <h1>Movie Database</h1>
+    </header>
+    <main>
+        <h2>add movie</h2>
+        <div id="form">
+            <div>
+                <label for="movie">Movie Title</label>
+                <input type="text" name="movie" id="title">
+            </div>
+            <div>
+                <label for="release">Release Date</label>
+                <input type="text" name="release" id="release">
+            </div>
+            <div>
+                <input type="button" id="generator" value="generate ID">
+                <input type="text" name="key" id="key" readonly>
+            </div>
+            <input id="save" type="button" value="add to Database">
+        </div>
+        <div id="search">
+            <label for="searchfield">Search Movie by Year</label>
+            <input type="text" id="searchfield">
+            <input type="button" value="find" id="find">
+        </div>
+
+        <section id="databox">
+            <p>No Information</p>                 
+        </section>
+    </main>
+</body>
+</html>
